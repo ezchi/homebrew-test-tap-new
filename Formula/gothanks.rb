@@ -5,6 +5,12 @@ class Gothanks < Formula
   sha256 "ce5440334b3eac2e058724faa4c6e4478ca1d81ea087e55ccca33f1996752aad"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/ezchi/homebrew-test-tap-new/releases/download/gothanks-0.3.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "cdd84f3af6aa3b896853cd467ef1e442e6b311399de31df9247615d0cbf13a84"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "734ca0d0612cac98036dc6b47ee916a826c540490cb8fced6e07dad2492b8275"
+  end
+
   depends_on "go" => :build
 
   def install
